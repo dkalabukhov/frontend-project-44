@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { sayGreetings } from '../gameEngine.js';
+import { sayGreetings } from '../index.js';
 import { getRandomNumber, isEven } from '../utils.js';
 
 const even = () => {
