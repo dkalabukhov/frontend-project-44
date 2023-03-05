@@ -1,8 +1,24 @@
-const getRandomNumber = () => Math.round(Math.random() * 100);
-
 const isEven = (number) => number % 2 === 0;
 
+const getRandomNumber = () => Math.round(Math.random() * 100);
+
 const getRandomNonZeroNumber = () => Math.round(1 + Math.random() * 100);
+
+const getProgressionStep = () => Math.round(Math.random() * 4 + 1);
+
+const getProgression = (firstNumber, progressionStep) => {
+  const arithmeticProgression = [firstNumber];
+  let temp = firstNumber;
+
+  for (let j = 0; j < 9; j += 1) {
+    temp += progressionStep;
+    arithmeticProgression.push(temp);
+  }
+
+  return arithmeticProgression;
+};
+
+const getMissingNumber = () => Math.round(Math.random() * 9);
 
 const getRandomMathOperator = () => {
   const mathOperators = ['+', '-', '*'];
@@ -24,5 +40,7 @@ const getGreatestCommonDivisor = (firstNumber, secondNumber) => {
   return divisor.toString();
 };
 
-export { getRandomNumber, isEven, getRandomMathOperator };
-export { getGreatestCommonDivisor, getRandomNonZeroNumber };
+export {
+  isEven, getRandomNumber, getRandomNonZeroNumber, getProgressionStep, getMissingNumber,
+  getRandomMathOperator, getGreatestCommonDivisor, getProgression,
+};
