@@ -1,5 +1,17 @@
 const isEven = (number) => number % 2 === 0;
 
+const isPrime = (number) => {
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+};
+
+const getRandomNumberAboveOne = () => Math.round(Math.random() * 100 + 2);
+
 const getRandomNumber = () => Math.round(Math.random() * 100);
 
 const getRandomNonZeroNumber = () => Math.round(1 + Math.random() * 100);
@@ -42,5 +54,6 @@ const getGreatestCommonDivisor = (firstNumber, secondNumber) => {
 
 export {
   isEven, getRandomNumber, getRandomNonZeroNumber, getProgressionStep, getMissingNumber,
-  getRandomMathOperator, getGreatestCommonDivisor, getProgression,
+  getRandomMathOperator, getGreatestCommonDivisor, getProgression, getRandomNumberAboveOne,
+  isPrime,
 };

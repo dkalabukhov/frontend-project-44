@@ -32,3 +32,9 @@ $ brain-gcd
 $ brain-progression
 ```
 [![asciicast](https://asciinema.org/a/564931.svg)](https://asciinema.org/a/564931)
+
+## To strat game "Brain prime"
+```sh
+$ brain-prime
+```
+[![asciicast](https://asciinema.org/a/565207.svg)](https://asciinema.org/a/565207)
