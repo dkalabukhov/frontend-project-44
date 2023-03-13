@@ -19,8 +19,8 @@ const runGcdGame = () => {
   const correctAnswers = [];
 
   for (let i = 0; i < roundsNumber; i += 1) {
-    const firstNumber = getRandomNumber();
-    const secondNumber = getRandomNumber();
+    const firstNumber = getRandomNumber(1, 100);
+    const secondNumber = getRandomNumber(1, 100);
     const question = `${firstNumber} ${secondNumber}`;
     const correctAnswer = getGreatestCommonDivisor(firstNumber, secondNumber);
 
