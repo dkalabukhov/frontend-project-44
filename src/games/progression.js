@@ -1,4 +1,4 @@
-import { startGame, roundsNumber } from '../index.js';
+import startGame, { roundsNumber } from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const integerOfSeries = 10;
