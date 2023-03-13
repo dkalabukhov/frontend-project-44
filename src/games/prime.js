@@ -1,13 +1,23 @@
-import startGame from '../index.js';
-import { getRandomNumberAboveOne, isPrime } from '../utils.js';
+import { startGame, roundsNumber } from '../index.js';
+import getRandomNumber from '../utils.js';
 
-const prime = () => {
+const isPrime = (number) => {
+  for (let i = 2; i < number / 2; i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+};
+
+const runPrimeGame = () => {
   const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const questions = [];
   const correctAnswers = [];
 
-  for (let i = 0; i < 3; i += 1) {
-    const question = getRandomNumberAboveOne();
+  for (let i = 0; i < roundsNumber; i += 1) {
+    const question = getRandomNumber(2, 100);
     const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
     questions.push(question);
@@ -17,4 +27,4 @@ const prime = () => {
   startGame(description, questions, correctAnswers);
 };
 
-export default prime;
+export default runPrimeGame;
