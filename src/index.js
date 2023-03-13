@@ -40,7 +40,7 @@ const startGame = (description, questions, correctAnswers) => {
       console.log('Correct!');
     } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswers[i]}.`);
-      console.log(`Let's try again, ${username}`);
+      console.log(`Let's try again, ${username}!`);
       return;
     }
   }
