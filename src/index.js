@@ -19,7 +19,7 @@ const showQuestion = (question) => {
 };
 
 const showCongratulations = (username) => {
-  console.log(`Congratulations, ${username}`);
+  console.log(`Congratulations, ${username}!`);
 };
 
 const getAnswer = () => {
