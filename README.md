@@ -6,7 +6,7 @@
 ## To install Brain Games
 ```sh
 $ git clone https://github.com/dkalabukhov/frontend-project-44.git
-$ npm link
+$ make install
 ```
 
 ## To start game "Brain even"
