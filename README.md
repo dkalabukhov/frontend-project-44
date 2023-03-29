@@ -33,7 +33,7 @@ $ brain-progression
 ```
 [![asciicast](https://asciinema.org/a/564931.svg)](https://asciinema.org/a/564931)
 
-## To strat game "Brain prime"
+## To start game "Brain prime"
 ```sh
 $ brain-prime
 ```

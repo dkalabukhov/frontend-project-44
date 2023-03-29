@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/dkalabukhov/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/dkalabukhov/frontend-project-44/actions)",
+  "description": "Educational project for hexlet.io",
   "main": "index.js",
   "bin": {
     "brain-games": "bin/brain-games.js",
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/dkalabukhov/frontend-project-44.git"
   },
-  "author": "",
+  "author": "Daniil Kalabukhov <daniil.kalabukhov@gmail.com> (https://github.com/dkalabukhov)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dkalabukhov/frontend-project-44/issues"
